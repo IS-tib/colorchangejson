@@ -1,0 +1,447 @@
+{
+  "dimensions": {
+    "x": [
+      8e-9,
+      "m"
+    ],
+    "y": [
+      8e-9,
+      "m"
+    ],
+    "z": [
+      3e-8,
+      "m"
+    ]
+  },
+  "position": [
+    19184.37109375,
+    27446.26171875,
+    2848.504638671875
+  ],
+  "crossSectionOrientation": [
+    0.7071067690849304,
+    -0.7071067690849304,
+    0,
+    0
+  ],
+  "crossSectionScale": 0.7123122822346689,
+  "crossSectionDepth": -50.463312747416445,
+  "projectionOrientation": [
+    0.708432674407959,
+    -0.7057337760925293,
+    -0.00787992775440216,
+    -0.0009624266531318426
+  ],
+  "projectionScale": 15076.458283241991,
+  "projectionDepth": -92.35867345695807,
+  "layers": [
+    {
+      "type": "image",
+      "source": "precomputed://gs://zetta_jlichtman_zebrafish_001_alignment/fine_full_v2/img_sharded",
+      "tab": "source",
+      "name": "img"
+    },
+    {
+      "type": "segmentation",
+      "source": {
+        "url": "graphene://middleauth+https://data.proofreading.zetta.ai/segmentation/table/lichtman_zebrafish_hindbrain_001",
+        "state": {
+          "multicut": {
+            "sinks": [],
+            "sources": []
+          },
+          "merge": {
+            "merges": [
+              {
+                "id": "3adac4c94e228ce553c6188a9219757a958550ad",
+                "locked": false,
+                "sink": {
+                  "segmentId": "576460752685957954",
+                  "rootId": "576460752695651991",
+                  "position": [
+                    8127.19775390625,
+                    14598.1650390625,
+                    1137.22216796875
+                  ]
+                },
+                "source": {
+                  "segmentId": "576460752695651735",
+                  "rootId": "576460752695651991",
+                  "position": [
+                    8147.13330078125,
+                    14600.052734375,
+                    1132.5018310546875
+                  ]
+                },
+                "mergedRoot": "576460752695651991"
+              }
+            ],
+            "autosubmit": true
+          },
+          "findPath": {}
+        }
+      },
+      "toolBindings": {
+        "C": "grapheneMulticutSegments",
+        "F": "grapheneFindPath",
+        "M": "grapheneMergeSegments"
+      },
+      "tab": "segments",
+      "selectedAlpha": 0.07,
+      "objectAlpha": 0.85,
+      "segments": [
+        "576460752733855684",
+        "576460752741561977",
+        "576460752743109397",
+        "576460752669096931"
+      ],
+      "timestampOwner": [
+        "2939"
+      ],
+      "colorSeed": 280254617,
+      "segmentColors": {
+        "576460752665931304": "#fe0000",
+        "576460752747434105": "#0064fe"
+      },
+      "name": "2939"
+    },
+    {
+      "type": "image",
+      "source": "precomputed://gs://zetta_jlichtman_zebrafish_001_functional_data/layers/em_downsampled_v2",
+      "tab": "rendering",
+      "blend": "additive",
+      "name": "em_downsampled",
+      "archived": true
+    },
+    {
+      "type": "image",
+      "source": "precomputed://gs://zetta_jlichtman_zebrafish_001_functional_data/layers/2p_stack_HuC",
+      "tab": "rendering",
+      "blend": "additive",
+      "shader": "void main() {\n  vec3 data = vec3(0, toNormalized(getDataValue(1)), 0);\n  emitRGB(data);\n}\n",
+      "name": "HuC1",
+      "visible": false
+    },
+    {
+      "type": "image",
+      "source": "precomputed://gs://zetta_jlichtman_zebrafish_001_functional_data/layers/2p_stack_Gad1b_hc",
+      "tab": "rendering",
+      "blend": "additive",
+      "shader": "void main() {\n  vec3 data = vec3(toNormalized(getDataValue(1)), 0, 0);\n  emitRGB(data);\n}",
+      "name": "Gad1b",
+      "visible": false
+    },
+    {
+      "type": "segmentation",
+      "source": "precomputed://gs://zetta_jlichtman_zebrafish_001_functional_data/layers/2p_stack_ROIs",
+      "tab": "source",
+      "segments": [],
+      "colorSeed": 111892901,
+      "name": "ROIs ID1"
+    },
+    {
+      "type": "image",
+      "source": "precomputed://gs://zetta_jlichtman_zebrafish_001_functional_data/layers/2p_stack_IDTMot_trials",
+      "tab": "rendering",
+      "blend": "additive",
+      "shader": "#uicontrol invlerp normalized\nvoid main() {\n  vec3 data = vec3(toNormalized(getDataValue(0)), toNormalized(getDataValue(1)), toNormalized(getDataValue(2)));\n  emitRGB(data);\n}",
+      "channelDimensions": {
+        "c^": [
+          1,
+          ""
+        ]
+      },
+      "name": "Functional types"
+    },
+    {
+      "type": "image",
+      "source": "precomputed://gs://zetta_jlichtman_zebrafish_001_functional_data/layers/em_downsampled_v2",
+      "tab": "source",
+      "blend": "additive",
+      "name": "EM_downsampled",
+      "visible": false
+    },
+    {
+      "type": "annotation",
+      "source": {
+        "url": "local://annotations",
+        "transform": {
+          "outputDimensions": {
+            "x": [
+              8e-9,
+              "m"
+            ],
+            "y": [
+              8e-9,
+              "m"
+            ],
+            "z": [
+              3e-8,
+              "m"
+            ]
+          }
+        }
+      },
+      "tool": "annotatePoint",
+      "tab": "annotations",
+      "annotationColor": "#00ff04",
+      "annotations": [
+        {
+          "point": [
+            20955.08984375,
+            28154.46875,
+            3179.7099609375
+          ],
+          "type": "point",
+          "id": "e300dec750dfdec69caf4661e00b267717a8e78a"
+        },
+        {
+          "point": [
+            21046.978515625,
+            27777.63671875,
+            3211.93212890625
+          ],
+          "type": "point",
+          "id": "7c5e5e8fd797fb7363112c759056a20d71c8ed7a"
+        },
+        {
+          "point": [
+            19903.228515625,
+            27767.607421875,
+            3232.47119140625
+          ],
+          "type": "point",
+          "id": "21c2cc4d9ee7ff6254536ab501319cea1734a91d"
+        },
+        {
+          "point": [
+            18174.845703125,
+            29748.416015625,
+            2916.35595703125
+          ],
+          "type": "point",
+          "id": "077cecc91dca5dd234a3a5ddf30c829d14d775ec"
+        },
+        {
+          "point": [
+            18806.94921875,
+            24729.626953125,
+            2891.953125
+          ],
+          "type": "point",
+          "id": "cfd98be271f72b568e1071a9f8b8c2a44ad13e8e"
+        },
+        {
+          "point": [
+            18842.498046875,
+            26198.296875,
+            2994.373779296875
+          ],
+          "type": "point",
+          "id": "e8aea6d709e79caaf68f5a567623955a791afbc0"
+        },
+        {
+          "point": [
+            19040.841796875,
+            26192.7421875,
+            3063.974365234375
+          ],
+          "type": "point",
+          "id": "f2a0ecac6ae2423a744c2393190cb979d4d2f885"
+        },
+        {
+          "point": [
+            17267.634765625,
+            25385.404296875,
+            3198.532958984375
+          ],
+          "type": "point",
+          "id": "75330dac6dda74e45649dd29b0dadbf28de62561"
+        },
+        {
+          "point": [
+            17496.818359375,
+            29649.138671875,
+            2630.393798828125
+          ],
+          "type": "point",
+          "id": "5e62c6c59be574cfd5a54bda5e1a3a3245da1b84"
+        },
+        {
+          "point": [
+            17388.20703125,
+            30295.189453125,
+            2819.320556640625
+          ],
+          "type": "point",
+          "id": "bad606a04d4e8b4e4a63eb810d8f527b295c3c1e"
+        },
+        {
+          "point": [
+            17570.8984375,
+            29123.181640625,
+            2754.53955078125
+          ],
+          "type": "point",
+          "id": "059db46caa2346d92183b4258e30707588c24d6b"
+        },
+        {
+          "point": [
+            17003.2265625,
+            29201.39453125,
+            3188.30126953125
+          ],
+          "type": "point",
+          "id": "2f6162617e89d628f2e57c9e23c548e1f08c18f1"
+        },
+        {
+          "point": [
+            16954.51171875,
+            28215.724609375,
+            3365.77734375
+          ],
+          "type": "point",
+          "id": "ecafb48ec4ce9a0f74514e234be24c58518fc0bd"
+        },
+        {
+          "point": [
+            15143.8896484375,
+            27864.978515625,
+            2713.368896484375
+          ],
+          "type": "point",
+          "id": "d5774ebd8fc51c812f851ff7b1dac07b488e4e15"
+        },
+        {
+          "point": [
+            15040.271484375,
+            27791.650390625,
+            2619.32421875
+          ],
+          "type": "point",
+          "id": "b98603895a8252e46ffc20df04892c70c69dda9a"
+        },
+        {
+          "point": [
+            15246.4287109375,
+            28071.888671875,
+            3016.992431640625
+          ],
+          "type": "point",
+          "id": "fe97084e2a1d9e1ac147952f7bbda872062d9d2f"
+        },
+        {
+          "point": [
+            16997.650390625,
+            26972.109375,
+            2582.89501953125
+          ],
+          "type": "point",
+          "id": "06d86ed62c0e08efa7768b4fbbc2c65828232ba0"
+        },
+        {
+          "point": [
+            13780.4580078125,
+            25756.779296875,
+            3026.8427734375
+          ],
+          "type": "point",
+          "id": "611a9b17e5aa3e271b1891d551d677f6a783f528"
+        },
+        {
+          "point": [
+            18235.26953125,
+            28328.572265625,
+            2835.933837890625
+          ],
+          "type": "point",
+          "id": "aca8eb4d4f69082e814e672d95d7fa42332fc2c1"
+        },
+        {
+          "point": [
+            16939.111328125,
+            24982.16796875,
+            2620.4638671875
+          ],
+          "type": "point",
+          "id": "6a9257a73c44a8116ad766b895d9e9356545717d"
+        },
+        {
+          "point": [
+            18701.7109375,
+            27297.365234375,
+            2828.525146484375
+          ],
+          "type": "point",
+          "id": "810cc149c29f2558a44af5b8cfd1f519ca115fc8"
+        },
+        {
+          "point": [
+            21015.61328125,
+            27211.3671875,
+            3074.2685546875
+          ],
+          "type": "point",
+          "id": "a54c55de3807b995679192d49eb790e331af1722"
+        },
+        {
+          "point": [
+            15767.2421875,
+            26082.51953125,
+            2524.94287109375
+          ],
+          "type": "point",
+          "id": "e12b854d221ff6d7d76ac31ec87002526527b5e7"
+        },
+        {
+          "point": [
+            15306.12890625,
+            28189.203125,
+            1203.2684326171875
+          ],
+          "type": "point",
+          "id": "2296fecf4bd9006c4577ecd97e94674107c0b841"
+        },
+        {
+          "point": [
+            15174.947265625,
+            28216.640625,
+            3020.369384765625
+          ],
+          "type": "point",
+          "id": "7101f46bcee7e16368056df7c271a21808245b81"
+        },
+        {
+          "point": [
+            15217.009765625,
+            28127.234375,
+            3060.9365234375
+          ],
+          "type": "point",
+          "id": "6f081fa4ac5390e888ffb52946d119eaf393931f"
+        },
+        {
+          "point": [
+            15310.1806640625,
+            27903.7109375,
+            3036.08203125
+          ],
+          "type": "point",
+          "id": "279812e90367a6fef6ac80a55a977253d59bdf20"
+        }
+      ],
+      "name": "Endings"
+    }
+  ],
+  "showSlices": false,
+  "selectedLayer": {
+    "col": 1,
+    "visible": true,
+    "layer": "2939"
+  },
+  "layout": "xy-3d",
+  "selection": {
+    "row": 0,
+    "visible": false
+  }
+}
