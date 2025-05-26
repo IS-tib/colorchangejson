@@ -1,0 +1,36 @@
+type,functional_id,comment,nucleus_id,soma_id,axon_id,dendrite_id,functional classifier,neurotransmitter classifier,projection classifier,neuroglancer_link,imaging_modality,date_of_tracing,tracer names,,Quality ,,,,
+,,,,,,,,,,,,,,,,,,,
+Bundle #1,#FF0000,,,,,,huc1,gadb1,,,,,,x,y,z,x nm,y nm,z nm
+cell,1,long immature neuron,576460752717171212,576460752701068979,,,11,0,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/5058622879956992,EM,45784,Kiran,27692,15106,1575,3461.5,1888.25,52.5
+cell,2,intermediate cell,576460752653061891,576460752709020624,,,60,7,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/6300969315860480,EM,45784,Kiran,27576,14430,1628,3447,1803.75,54.26666667
+cell,3,long preneuron/ immature projection neuron,576460752716950028,576460752702950879,,,43,15,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/5017694123327488,EM,45784,Kiran,27541,14317,1969,3442.625,1789.625,65.63333333
+cell,4,long preneuron/ immature projection neuron,576460752652984323,576460752725538235,,,17,0,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/4576098739290112,EM,45784,Kiran,27885,14509,1720,3485.625,1813.625,57.33333333
+cell,5,intermediate cell,576460752723164025,576460752697247195,,,35,0,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/6278218504994816,EM,45784,Kiran,28321,14932,1708,3540.125,1866.5,56.93333333
+cell,6,long preneuron/ immature projection neuron,576460752717003532,576460752727316289,,,25,7,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/5189217937260544,EM,45784,Kiran,27539,14279,1816,3442.375,1784.875,60.53333333
+cell,7,intermediate cell?,576460752717148940,576460752706170580,,,22,0,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/6213267325190144,EM,45784,Kiran,28296,15020,1600,3537,1877.5,53.33333333
+cell,8,more mature?,576460752625433936,576460752783872924,,,106,7,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/5940505327173632,EM,45784,Kiran,27712,14498,2086,3464,1812.25,69.53333333
+cell,9,,576460752624768848,576460752744030882,,,54,0,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/4901596258369536,EM,45784,Kiran,28238,14739,2058,3529.75,1842.375,68.6
+cell,10,,576460752605091036,576460752702954463,,,85,7,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/5064954131513344,EM,45784,Kiran,28024,14853,2159,3503,1856.625,71.96666667
+cell,11,review,576460752742055824,576460752698563345,,,183,7,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/6007251367100416,EM,45784,Kiran,27820,14673,2258,3477.5,1834.125,75.26666667
+cell,12,,576460752615744939,576460752702956255,,,84,7,,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/6575816117846016,EM,45784,Kiran,27652,14434,2173,3456.5,1804.25,72.43333333
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Full bundle,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/4968937319038976,,,,,,,,,,,,,,,,,,
+nucleus,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/5415386284556288,,,,,,,,,,,,,,,,,,
+2 gp colour,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/5130913756217344,,,,,,,,,,,,,,,,,,
+4 gp colour,https://spelunker.cave-explorer.org/#!middleauth+https://global.daf-apis.com/nglstate/api/v1/5702522363707392,,,,,,,,,,,,,,,,,,
+,Calcs: Super,x,y,z,huc,Calcs: deep,x,y,z,huc,Calcs: full,x,y,z,huc,,,,
+,1,3461.5,1888.25,52.5,11,3,3442.625,1789.625,65.63333333,43,1,3461.5,1888.25,52.5,11,,,,
+,2,3447,1803.75,54.26666667,60,8,3464,1812.25,69.53333333,106,2,3447,1803.75,54.26666667,60,,,,
+,4,3485.625,1813.625,57.33333333,17,9,3529.75,1842.375,68.6,54,3,3442.625,1789.625,65.63333333,43,,,,
+,5,3540.125,1866.5,56.93333333,35,10,3503,1856.625,71.96666667,85,4,3485.625,1813.625,57.33333333,17,,,,
+,6,3442.375,1784.875,60.53333333,25,11,3477.5,1834.125,75.26666667,183,5,3540.125,1866.5,56.93333333,35,,,,
+,7,3537,1877.5,53.33333333,22,12,3456.5,1804.25,72.43333333,84,6,3442.375,1784.875,60.53333333,25,,,,
+,mean,3485.604167,1839.083333,55.81666667,28.33333333,mean,3478.895833,1823.208333,70.57222222,92.5,7,3537,1877.5,53.33333333,22,,,,
+,std dev,43.71294264,43.54305819,3.012105207,17.47760472,std dev,32.27425606,25.33989772,3.37068517,49.86682264,8,3464,1812.25,69.53333333,106,,,,
+,,,,,,,,,,,9,3529.75,1842.375,68.6,54,,,,
+,,,,,,,,,,,10,3503,1856.625,71.96666667,85,,,,
+,,,,,,,,,,,11,3477.5,1834.125,75.26666667,183,,,,
+,,,,,,,,,,,12,3456.5,1804.25,72.43333333,84,,,,
+,,,,,,,,,,,mean,3482.25,1831.145833,63.19444444,60.41666667,,,,
+,,,,,,,,,,,std dev,36.80075345,34.96308253,8.286630748,48.90892897,,,,
